@@ -6,8 +6,8 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Tim Riedel
-Ethan Durham
+1) Tim Riedel
+2) Ethan Durham
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -57,8 +57,15 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
             cold_count = cold_count + 1; //add one to cold count
 		alert(cold_count);
 	
+	//create function to calculate percentage of questions that lend to allergy and cold
 	function getResult(){
-		print("This is where the results will be displayed");
+		
+		//create calculation variables
+		var allergyPercent = (allergy_count/6)*100; //take the allergy count and divide by the total number of questons asked, then convert to percentage.
+		var coldPercent = (cold_count/6)*100; //take the cold count and divide by the total number of questons asked, then convert to percentage.
+		//create resultText variable using getElementById
+		var resultText = document.getElementById("results");
+		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 		
         }
   </script>
 
@@ -210,8 +217,7 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 	
 	<div id="content" class="w3-container">
 		<p>Click the button below to view your results!</p>
-		<button onclick="getResults();">Results</button>
-		
+		<button onclick="getResult();"> Results </button>
 	</div>
 </div>	
 	
