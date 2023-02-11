@@ -65,7 +65,7 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 		var coldPercent = (cold_count/6)*100; //take the cold count and divide by the total number of questons asked, then convert to percentage.
 		//create resultText variable using getElementById
 		var resultText = document.getElementById("results");
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 		
+		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%"; 		
         }//end of getResult
 	
   </script>
@@ -124,6 +124,7 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 			<!--If user selects No to this question, add one to cold count-->
     	</div>
 </div>
+<!--End of Page 1-->
 
 <!--Page/Question 2 Content Below-->
 <div class="page" id="two">
@@ -141,7 +142,8 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 			<!--If user selects No to this question, add one to allergy count-->
 	</div>
 </div>	
-
+<!--End of Page 2-->
+	
 <!--Page/Question 3 Content Below-->
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
@@ -158,6 +160,7 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 			<!--If user selects No to this question, add one to allergy count-->
 	</div>
 </div>	
+<!--End of Page 3-->
 
 <!--Page/Question 4 Content Below-->
 <div class="page" id="four">
@@ -175,6 +178,7 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 			<!--If user selects No to this question, add one to cold count-->
 	</div>
 </div>	
+<!--End of Page 4-->
 	
 <!--Page/Question 5 Content Below (New Question for Cold)-->
 <div class="page" id="five">
@@ -192,7 +196,8 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 			<!--If user selects No to this question, add one to allergy count-->
 	</div>
 </div>	
-
+<!--End of Page 5-->
+	
 <!--Page/Question 6 Content Below (New Question for Allergy)-->
 <div class="page" id="six">
 	<div class="w3-container w3-flat-carrot">
@@ -209,18 +214,28 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 			<!--If user selects No to this question, add one to cold count-->
 	</div>
 </div>	
-
+<!--End of Page 6-->
+	
 <!--Page 7 Content Below (Results Page)-->
 <div class="page" id="results">
+	
+	<!--Container 1 with the "Results" title-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
 	
+	<!--Container 2 with the Instructions for the page-->
+	<div id="content" class="w3-container">
+		<p>Click the button below to find out your results!</p>
+	</div>
+	
+	<!--Container 3 with the button for the user to press-->
 	<div id="content" class="w3-container">
 		<button onclick="getResult();"> Results </button>
 		<p id="results"></p>
 	</div>
-</div>	
+</div>
+<!--End of Page 7 (Results Page)-->
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
