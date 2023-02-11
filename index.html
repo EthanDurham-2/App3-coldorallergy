@@ -30,7 +30,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 -->
 	
    <head> 
-      <title>Hello World</title>  
+      <title>Cold or Allergies Diagnostic App</title>  <!--App title to match the purpose of the app-->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -39,24 +39,24 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
+        //initialize count variables and set to 0.
+	var allergy_count = 0;
         var cold_count = 0;
-
-
+	
+	//create function for adding 1 to allergy count whenever the function is called to later on in the code.
         function allergyAdd(){
-            allergy_count = allergy_count + 1;
+            allergy_count = allergy_count + 1; //add one
 		alert(allergy_count);
-
         }
-
+	
+	//create function for adding 1 to cold count whenever the function is called to later on in the code.
         function coldAdd(){
-            cold_count = cold_count + 1;
+            cold_count = cold_count + 1; //add one
         }
 
   </script>
 
-
-
+	
 <style>	
 .body {
      margin: 0em;
