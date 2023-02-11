@@ -53,10 +53,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1; //add one
         }
-
   </script>
 
-	
+
 <style>	
 .body {
      margin: 0em;
@@ -101,7 +100,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Put Question 1 content here.</p>    
+        <p>Are your eyes watery or itchy?</p> <!--Question 1-->
+		<!--Create Yes and No buttons for user to press in response to the question-->
+		<a href="#" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
+		<!--If user selects Yes to this question, add one to allergy count-->
+		<a href="#two" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> No </a>
+		<!--If user selects No to this question, add one to cold count-->
     	</div>
 </div>
 
