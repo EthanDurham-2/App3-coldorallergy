@@ -106,7 +106,8 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
     	<div id="content" class="w3-container">
 		<p>Are your eyes watery or itchy?</p> <!--Question 1-->
 			<!--Create Yes and No buttons for user to press in response to the question-->
-			<a href="#" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
+			<!--Regardless of answer choice, send user to next page-->
+			<a href="#two" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
 			<!--If user selects Yes to this question, add one to allergy count-->
 			<a href="#two" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> No </a>
 			<!--If user selects No to this question, add one to cold count-->
@@ -122,9 +123,10 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p> <!--Question 2-->
 			<!--Create Yes and No buttons for user to press in response to the question-->
-			<a href="#" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> Yes </a>
+			<!--Regardless of answer choice, send user to next page-->
+			<a href="#three" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> Yes </a>
 			<!--If user selects Yes to this question, add one to cold count-->
-			<a href="#two" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> No </a>
+			<a href="#three" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> No </a>
 			<!--If user selects No to this question, add one to allergy count-->
 	</div>
 </div>	
@@ -138,15 +140,16 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p> <!--Question 3-->
 			<!--Create Yes and No buttons for user to press in response to the question-->
-			<a href="#" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> Yes </a>
+			<!--Regardless of answer choice, send user to next page-->
+			<a href="#four" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> Yes </a>
 			<!--If user selects Yes to this question, add one to cold count-->
-			<a href="#two" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> No </a>
+			<a href="#four" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> No </a>
 			<!--If user selects No to this question, add one to allergy count-->
 	</div>
 </div>	
 
 <!--Page/Question 4 Content Below-->
-<div class="page" id="three">
+<div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
@@ -154,15 +157,16 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p> <!--Question 4-->
 			<!--Create Yes and No buttons for user to press in response to the question-->
-			<a href="#" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
+			<!--Regardless of answer choice, send user to next page-->
+			<a href="#five" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
 			<!--If user selects Yes to this question, add one to allergy count-->
-			<a href="#two" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> No </a>
+			<a href="#five" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> No </a>
 			<!--If user selects No to this question, add one to cold count-->
 	</div>
 </div>	
 	
 <!--Page/Question 5 Content Below (New Question for Cold)-->
-<div class="page" id="three">
+<div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 5</h1>
 	</div>
@@ -170,9 +174,10 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 	<div id="content" class="w3-container">
 		<p>Are you experiencing any body aches?</p> <!--Question 5-->
 			<!--Create Yes and No buttons for user to press in response to the question-->
-			<a href="#" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> Yes </a>
+			<!--Regardless of answer choice, send user to next page-->
+			<a href="#six" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> Yes </a>
 			<!--If user selects Yes to this question, add one to cold count-->
-			<a href="#two" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> No </a>
+			<a href="#six" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> No </a>
 			<!--If user selects No to this question, add one to allergy count-->
 	</div>
 </div>	
@@ -186,15 +191,16 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 	<div id="content" class="w3-container">
 		<p>Is your cough a dry cough?</p> <!--Question 6-->
 			<!--Create Yes and No buttons for user to press in response to the question-->
-			<a href="#" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
+			<!--Regardless of answer choice, send user to next page-->
+			<a href="#seven" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
 			<!--If user selects Yes to this question, add one to allergy count-->
-			<a href="#two" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> No </a>
+			<a href="#seven" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> No </a>
 			<!--If user selects No to this question, add one to cold count-->
 	</div>
 </div>	
 
 <!--Page 7 Content Below (Results Page)-->
-<div class="page" id="three">
+<div class="page" id="seven">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
