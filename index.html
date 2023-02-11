@@ -59,7 +59,6 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 	
 	//create function to calculate percentage of questions that lend to allergy and cold
 	function getResult(){
-		
 		//create calculation variables
 		var allergyPercent = (allergy_count/6)*100; //take the allergy count and divide by the total number of questons asked, then convert to percentage.
 		var coldPercent = (cold_count/6)*100; //take the cold count and divide by the total number of questons asked, then convert to percentage.
@@ -216,8 +215,8 @@ https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-difference
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Click the button below to view your results!</p>
 		<button onclick="getResult();"> Results </button>
+		<p id="results"></p>
 	</div>
 </div>	
 	
