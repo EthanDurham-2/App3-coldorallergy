@@ -27,6 +27,9 @@ blah, blah, blah, blah (FILL IN)
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
+
+For Health Information:
+https://www.bannerhealth.com/healthcareblog/better-me/how-to-tell-the-differences-between-allergies-and-colds
 -->
 	
    <head> 
@@ -101,12 +104,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?</p> <!--Question 1-->
-		<!--Create Yes and No buttons for user to press in response to the question-->
-		<a href="#" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
-		<!--If user selects Yes to this question, add one to allergy count-->
-		<a href="#two" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> No </a>
-		<!--If user selects No to this question, add one to cold count-->
+		<p>Are your eyes watery or itchy?</p> <!--Question 1-->
+			<!--Create Yes and No buttons for user to press in response to the question-->
+			<a href="#" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
+			<!--If user selects Yes to this question, add one to allergy count-->
+			<a href="#two" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> No </a>
+			<!--If user selects No to this question, add one to cold count-->
     	</div>
 </div>
 
@@ -117,7 +120,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 2 goes here.</p>
+		<p>Do you have a fever?</p> <!--Question 2-->
+			<!--Create Yes and No buttons for user to press in response to the question-->
+			<a href="#" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> Yes </a>
+			<!--If user selects Yes to this question, add one to cold count-->
+			<a href="#two" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> No </a>
+			<!--If user selects No to this question, add one to allergy count-->
 	</div>
 </div>	
 
@@ -128,7 +136,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 3 goes here.</p>
+		<p>Do you have a sore throat?</p> <!--Question 3-->
+			<!--Create Yes and No buttons for user to press in response to the question-->
+			<a href="#" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> Yes </a>
+			<!--If user selects Yes to this question, add one to cold count-->
+			<a href="#two" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> No </a>
+			<!--If user selects No to this question, add one to allergy count-->
 	</div>
 </div>	
 
@@ -139,29 +152,44 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 4 goes here.</p>
+		<p>Are your symptoms seasonal or chronic?</p> <!--Question 4-->
+			<!--Create Yes and No buttons for user to press in response to the question-->
+			<a href="#" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
+			<!--If user selects Yes to this question, add one to allergy count-->
+			<a href="#two" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> No </a>
+			<!--If user selects No to this question, add one to cold count-->
 	</div>
 </div>	
 	
-<!--Page/Question 5 Content Below (New Question for Allergy)-->
+<!--Page/Question 5 Content Below (New Question for Cold)-->
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 5</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 5 goes here.</p>
+		<p>Are you experiencing any body aches?</p> <!--Question 5-->
+			<!--Create Yes and No buttons for user to press in response to the question-->
+			<a href="#" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> Yes </a>
+			<!--If user selects Yes to this question, add one to cold count-->
+			<a href="#two" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> No </a>
+			<!--If user selects No to this question, add one to allergy count-->
 	</div>
 </div>	
 
-<!--Page/Question 6 Content Below (New Question for Cold)-->
+<!--Page/Question 6 Content Below (New Question for Allergy)-->
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 6</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 6 goes here.</p>
+		<p>Is your cough a dry cough?</p> <!--Question 6-->
+			<!--Create Yes and No buttons for user to press in response to the question-->
+			<a href="#" class="w3-btn w3-grey w3-round" onclick="allergyAdd()"> Yes </a>
+			<!--If user selects Yes to this question, add one to allergy count-->
+			<a href="#two" class="w3-btn w3-grey w3-round" onclick="coldAdd()"> No </a>
+			<!--If user selects No to this question, add one to cold count-->
 	</div>
 </div>	
 
